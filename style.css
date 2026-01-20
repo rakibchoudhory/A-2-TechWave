@@ -36,12 +36,19 @@ header,.choose,.feature {
     background-color: #1A0B2E;
     
 }
-.choose-container h1 ,.feature h1{
+.choose-container h1 ,.feature h1,.meet h1{
     color: #FFFFFF;
     font-weight: 3rem;
     font-weight: bold;
 }
+.wave, .nav-btn {
+      background: linear-gradient( 45deg,
+        #F7E93F 0%,  
+        #FB09B4 51%,
+        #9100F8 100%
+            );
 
+}
 
 
 
@@ -68,22 +75,12 @@ nav h2{
     color: #FFFFFF;
 }
 .wave{
-    background: linear-gradient( 45deg,
-        #F7E93F 0%,  
-        #FB09B4 51%,
-        #9100F8 100%
-            );
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .nav-btn{
     padding: 12px 16px;
-    background: linear-gradient( 45deg,
-        #F7E93F 0%,  
-        #FB09B4 51%,
-        #9100F8 100%
-            );
+   
      display: flex;
      border-radius: 26px;
      border: none;
@@ -246,7 +243,7 @@ nav h2{
     padding: 120px 0px;
 
 }
-.choose-container h1 {
+.choose-container h1 ,.meet h1 {
     margin-bottom: 40px;
     text-align: center;
 }
@@ -297,4 +294,49 @@ iframe{
 
 
 
+.meet{
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+}
+.meet-box{
+    background-color: #250D44;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
 
+.meet h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-bottom:1rem ;
+}
+.meet p{
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+.meet-media {
+    display: flex;
+    gap: 8px;
+}
+.linkdin, .x ,  .instrangram, .youtube{
+    border-radius: 30px;
+    border: 1px solid #533C72;
+}
+.linkdin{
+   padding: 6px 8px 7px 10px;
+}
+.x{
+   padding: 8px 9px 0px 9px;
+}
+.instrangram{
+  padding: 8px 8px 0px 8px;
+}
+.youtube{
+padding: 6px 7px 0px 7px;
+}
+.twiter img{
+  
+}
