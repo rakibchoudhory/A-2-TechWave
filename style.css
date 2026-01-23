@@ -2,11 +2,10 @@
     margin:0;
     padding: 0;
     font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
 }
 
 
-/* Common Tag */
 .container{
     width: 75%;
     margin: 0 auto;
@@ -22,8 +21,8 @@
     gap: 16px;
    
 }
-.grid-box p , .feature p{
-    color: #FFFFFF;
+.grid-box p , .feature p , footer p{
+    color: #ffffff93;
     line-height: 20px;
 }
 .grid-box h2 , .feature h2{
@@ -62,12 +61,12 @@ align-items: center;
 padding: 24px 0px;
 
 }
-nav ul ,a{
+nav ul ,.nav-a{
     display: flex;
     gap: 32px;
     color: #FFFFFF;
 }
-nav li ,a{
+nav li ,.nav-a{
     text-decoration: none;
     list-style: none;
 }
@@ -89,6 +88,9 @@ nav h2{
      color: #FFFFFF;
      font-weight: 600;
 }
+nav .hamburger-menu{
+    display: none;
+}
 
 
 .hero{
@@ -108,7 +110,6 @@ nav h2{
     left: 528px;
 }
 .hero-content{
-   white-space: nowrap;
    margin-top: 40px;
 }
 .hero-image {
@@ -120,6 +121,9 @@ nav h2{
 
 .microphone {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .new-btn{
@@ -142,10 +146,11 @@ nav h2{
     color: #FFFFFF;
 }
 .hero-content p{
-    color: #FFFFFF;
+    color: #ffffff93;
     margin-top: 8px;
     margin-bottom: 24px;
 }
+
 .spotify-btn{
     padding: 12px 20px;
    background: linear-gradient( 45deg,
@@ -201,24 +206,33 @@ nav h2{
     margin-bottom: 16px;
 }
 .about-content p{
-    color: #FFFFFF;
+    color: #ffffff93;
     line-height: 20px;
 }
 .about-last{
     display: flex;
     justify-content: space-around;
     padding-top: 80px;
-  /*   padding: 80px 20px 0px 20px; */
 }
 .about-p{
-    color: #FFFFFF;
-
+    color: #ffffff93;
+    white-space: nowrap;
 }
 .about-h1{
     color: #00FF88;
     font-size: 3rem;
     margin-bottom: 10px;
 }
+
+.about-1,
+    .about-2,
+    .about-3,
+    .about-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -315,7 +329,7 @@ iframe{
 .meet p{
     line-height: 24px;
     margin-bottom: 1rem;
-    color: #FFFFFF;
+    color: #ffffff93;
 }
 .meet-media {
     display: flex;
@@ -337,56 +351,56 @@ iframe{
 .youtube{
 padding: 6px 7px 0px 7px;
 }
-
-
-
-
+.hide{
+    display: none;
+}
 
 
 
 footer{
-    background: url(image/footer-bg.png);
+    width: 100%;
+    padding-block: 128px;
+    /* height: 412px; */
+    background: url(./image/footer-bg.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-   /*  position: reletive; */
-}
-
-.footer-container{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  /* position: absolute;
-  bottom: 230px; */
-  gap: 32px;
-  margin: 0 auto;
-  padding: 100px 0px;
-  max-width: 544px;
-
-}
-.footer-media{
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
     display: flex;
     justify-content: center;
-    gap: 40px;
-
 }
-.spotify , .apple, .youtube-product, .twiter{
+.footer-container{
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 32px;
+    /* width: 50px; */
     display: flex;
+    max-width: 540px;
+    text-align: center;
+    margin-inline: auto;
+
+}
+
+footer ul li a{
+    text-decoration: none;
+    display: flex;
+    gap:8px ;
     align-items: center;
-    gap: 8px;
-}
-.footer-bg img{
-    width: 100%;
-}
-.footer-container p{
-    color: #FAFAFA;
-    font-size: 16px;
+    justify-content: center;
+    flex-direction: row;
 }
 
+footer ul li{
+    list-style-type: none;
+}
+footer ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
 
-
-.hide{
-    display: none;
+.apple{
+   /*  display: flex;
+    align-items: center; */
 }

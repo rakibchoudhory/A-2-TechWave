@@ -1,5 +1,103 @@
-@media screen and (max-width:992px) {
-     nav li {
-      list-style-type: none;
+@media screen and (max-width:576px) {
+     /* navbar */
+     nav ul{
+          display: none;
      }
+      .nav-btn{
+          display: none;
+      }
+     nav .hamburger-menu{
+          display:block;
+      }
+
+     
+     /* choose section */
+     .grid {
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(1,1fr);
+     }
+
+     .grid-box {
+          grid-column: span 1;
+          grid-row: span 1;
+     }
+      .choose-container{
+          padding: 50px 0px;
+      }
+     /* hero-bannar */
+     .hero-content{
+          width: 400px;
+          margin: 0  auto;
+
+     }
+     .circle-img img{
+          width: 300px;
+     }
+     .new-btn{
+          margin-bottom: 257px;
+    margin-left: 200px;
+     }
+
+
+     /* footer section */
+     footer {
+          background-image: url("./image/footer-bg\ \(2\).png");
+          padding-block: 40px;
+          background-position: 0 27px;
+          display: flex;
+          align-items: center;
+     }
+
+     .footer-container{
+          width: 100%;
+          align-items: center;
+     }
+
+     .footer-container ul {
+          flex-wrap:wrap;
+          max-width:256px;
+          gap: 12px;
+     }
+    /* about section */
+    .about-container{
+     padding: 50px 0px;
+    }
+    .about-last{
+     display: grid;
+     grid-template-columns: repeat(2 , 1fr);
+     gap: 50px;
+    }
+    .about-container{
+     padding-top: 0px;
+    }
+
+
+    /* feature section */
+    .feature-box{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    .feature h1 {
+     margin-bottom: 50px;
+    }
+    .feature{
+     padding-block: 80px;
+    }
+
+
+    /* meet section */
+    .meet-box{
+     flex-direction: column;
+}
+.meet-content{
+          display: flex;
+          flex-direction: column;
+         justify-content: center;
+         align-items: center;
+            text-align: center;
+    }
+    .meet{
+     padding-bottom: 50px;
+    }
 }
