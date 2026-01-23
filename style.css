@@ -404,3 +404,11 @@ footer ul {
    /*  display: flex;
     align-items: center; */
 }
+
+/* hover */
+
+
+.new-btn:hover{
+    transition: 0.5s;
+    transform: rotate(361deg);
+}
